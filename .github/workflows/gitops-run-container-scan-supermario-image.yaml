@@ -29,8 +29,8 @@ jobs:
       
       - name: Load Docker Image
         run: |
-          ls -la /github/workspace/
-          docker load -i /github/workspace/supermariolatestdockerimage.tar
+          ls -la ${{ github.workspace }}
+          docker load -i ${{ github.workspace }}/supermariolatestdockerimage.tar
 
       - name: Run Trivy vulnerability scanner in tarball mode
         uses: aquasecurity/trivy-action@master
