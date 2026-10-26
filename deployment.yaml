@@ -13,7 +13,7 @@ spec:
         app: supermariogame
     spec:
       containers:
-      - image: renxuzhan/supermario:2
+      - image: renxuzhan/supermario:3
         name: supermariogame-container
         ports:
         - containerPort: 8080
