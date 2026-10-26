@@ -1,4 +1,4 @@
-name: "Run SAST, Build and push supermario image, scan image, Update deployment and version txt files"
+name: "Build and push supermario image, scan image, Update deployment and version txt files"
  
 #on:
 #  push:
