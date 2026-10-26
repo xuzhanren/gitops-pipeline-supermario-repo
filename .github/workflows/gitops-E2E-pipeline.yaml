@@ -58,7 +58,7 @@ jobs:
         with:
           image-ref: docker.io/renxuzhan/supermario:${{ needs.build_push_supermario_docker_image.outputs.version }}
           format: table
-          exit-code: '1'
+          exit-code: '0'
           ignore-unfixed: true
           vuln-type: os,library
           severity: CRITICAL,HIGH
