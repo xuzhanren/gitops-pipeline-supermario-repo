@@ -54,7 +54,7 @@ jobs:
           docker pull docker.io/renxuzhan/supermario:${{ needs.build_push_supermario_docker_image.outputs.version }}
 
       - name: Scan image with Trivy
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@master
         with:
           image-ref: docker.io/renxuzhan/supermario:${{ needs.build_push_supermario_docker_image.outputs.version }}
           format: table
